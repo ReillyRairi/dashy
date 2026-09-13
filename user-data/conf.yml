@@ -1,20 +1,15 @@
-# yaml-language-server: $schema=https://raw.githubusercontent.com/Lissy93/dashy/master/src/utils/config/ConfigSchema.json
----
-# Page meta info, like heading, footer text and nav links
+appConfig:
+  theme: colorful
+  layout: auto
+  language: en
 pageInfo:
   title: Dashy
   description: Welcome to your new dashboard!
   navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
-
-# Optional app settings and configuration
-appConfig:
-  theme: colorful
-
-# Main content - An array of sections, each containing an array of items
+    - title: GitHub
+      path: https://github.com/Lissy93/dashy
+    - title: Documentation
+      path: https://dashy.to/docs
 sections:
   - name: Getting Started
     icon: fas fa-rocket
@@ -28,32 +23,24 @@ sections:
         provider: Dashy.to
         icon: far fa-book
         url: https://dashy.to/docs
-
-  - name: Support Dashy
-    icon: fas fa-heart
-    displayData:
-      itemSize: large
+  - name: Clock
+    icon: clock
+    items: []
     widgets:
-      - type: image
-        label: Dashy is made possible thanks to our awesome sponsors
-        options:
-          imagePath: https://readme-contribs.as93.net/sponsors/lissy93?perRow=5&shape=squircle
+      - type: clock
+        updateInterval: 0.7
+  - name: Weather
     items:
-      - title: Sponsor
-        url: https://github.com/sponsors/lissy93
-        description: Sponsor @Lissy93 on GitHub to support with ongoing development of Dashy
-        icon: 🩷
-        color: '#ff78d1'
-        backgroundColor: '#c30c844a'
-
-  - name: Latest Updates
-    icon: fas fa-code-branch
-    displayData:
-      cols: 1
-      rows: 3
-      cutToHeight: true
+      - title: WeatherWise Radar
+        icon: fas fa-cloud-sun-rain
+        url: '[https://web.weatherwise.app/#map=7.63/39.131/-94.734&rt=KEAX&rp=REF0&m=RADAR&oid=USA/SPC/CONVECTIVE/CATEGORICAL&ost=DAY_1&sid=GOES-18&sr=FD&sp=ABI-L1b-C11](https://web.weatherwise.app/#map=7.63/39.131/-94.734&rt=KEAX&rp=REF0&m=RADAR&oid=USA/SPC/CONVECTIVE/CATEGORICAL&ost=DAY_1&sid=GOES-18&sr=FD&sp=ABI-L1b-C11)'
+        target: newtab
     widgets:
-      - type: rss-feed
+      - type: iframe
+        label: WeatherWise
+        useProxy: false
+        ignoreErrors: false
         options:
-          rssUrl: https://github.com/lissy93/dashy/releases.atom
-          limit: 5
+          url: '[https://www.espn.com/](https://www.espn.com/)'
+    icon: fas fa-cloud-sun-rain
+pages: []
