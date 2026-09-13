@@ -29,7 +29,6 @@ sections:
       - title: WeatherWise Radar
         icon: fas fa-cloud-sun-rain
         url: "https://web.weatherwise.app/#map=7.63/39.131/-94.734&rt=KEAX&rp=REF0&m=RADAR&oid=USA/SPC/CONVECTIVE/CATEGORICAL&ost=DAY_1&sid=GOES-18&sr=FD&sp=ABI-L1b-C11"
-  target: newtab
         target: newtab
     widgets:
       - type: iframe
