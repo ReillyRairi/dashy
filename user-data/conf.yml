@@ -11,6 +11,19 @@ pageInfo:
     - title: Documentation
       path: https://dashy.to/docs
 sections:
+  - name: Weather
+    icon: fas fa-cloud-sun
+    items:
+      - title: WeatherWise Radar
+        description: Live weather radar map
+        icon: fas fa-cloud-sun-rain
+        url: "https://web.weatherwise.app/#map=7.63/39.131/-94.734&rt=KEAX&rp=REF0&m=RADAR&oid=USA/SPC/CONVECTIVE/CATEGORICAL&ost=DAY_1&sid=GOES-18&sr=FD&sp=ABI-L1b-C11"
+        target: newtab
+    widgets:
+      - type: weather-forecast
+        options:
+          lat: 39.131
+          lon: -94.734
   - name: GitHub
     icon: fas fa-rocket
     items:
@@ -24,16 +37,4 @@ sections:
     widgets:
       - type: clock
         updateInterval: 0.7
-  - name: Weather
-    items:
-      - title: WeatherWise Radar
-        icon: fas fa-cloud-sun-rain
-        url: "https://web.weatherwise.app/#map=7.63/39.131/-94.734&rt=KEAX&rp=REF0&m=RADAR&oid=USA/SPC/CONVECTIVE/CATEGORICAL&ost=DAY_1&sid=GOES-18&sr=FD&sp=ABI-L1b-C11"
-        target: newtab
-    widgets:
-      - type: iframe
-        label: WeatherWise
-        options:
-          url: "https://web.weatherwise.app/#map=7.63/39.131/-94.734&rt=KEAX&rp=REF0&m=RADAR&oid=USA/SPC/CONVECTIVE/CATEGORICAL&ost=DAY_1&sid=GOES-18&sr=FD&sp=ABI-L1b-C11"
-    icon: fas fa-cloud-sun-rain
 pages: []
