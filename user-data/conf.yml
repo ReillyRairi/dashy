@@ -30,7 +30,7 @@ sections:
     icon: fas fa-clock
     items: []
     widgets:
-- type: clock
+type: clock
   options:
     timeZone: "America/Chicago"
     customCityName: "Kansas City"
