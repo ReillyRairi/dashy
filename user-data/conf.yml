@@ -30,11 +30,9 @@ sections:
     icon: fas fa-clock
     items: []
     widgets:
-- name: Clock
-    icon: fas fa-clock
-    items: []
-      - type: clock
-        options:
-          timeZone: "America/Chicago"
-          format: "12hour"
+- type: clock
+  options:
+    timeZone: "America/Chicago"
+    customCityName: "Kansas City"
+    use12Hour: true
 pages: []
