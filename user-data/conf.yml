@@ -30,6 +30,9 @@ sections:
     icon: fas fa-clock
     items: []
     widgets:
+- name: Clock
+    icon: fas fa-clock
+    items: []
       - type: clock
         options:
           timeZone: "America/Chicago"
